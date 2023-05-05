@@ -44,8 +44,6 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-
-  int *array = (int*)calloc(sizeof(int),10);
   
   int fila,columa = 0;
   int vfilas[10], vcolumnas[10],vmatriz[10];
@@ -57,6 +55,19 @@ int is_valid(Node* n){
       vmatriz[i]=0;
     }
   return 1;
+
+  for(int i = 0 ; i < 9 ; i++)
+   for(int j = 0 ; j < 9 ; j++)
+     {
+      if (vfilas[n->sudo[i][j] == 1)
+      {
+        if(n->sudo[i][j] != 0)
+        return 0;
+      }
+      else{
+        vfilas[n->sudo[i][j]] = 1;
+      }
+     }
 }
 
 
