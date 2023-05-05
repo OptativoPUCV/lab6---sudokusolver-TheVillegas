@@ -73,7 +73,7 @@ int is_valid(Node* n){
       return 0;
     }
     else{
-      vcolumnas[n->sudo[i][j]]] = 1;
+      vcolumnas[n->sudo[i][j]] = 1;
     }
     
     
