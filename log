@@ -377,3 +377,14 @@ Fri 05 May 2023 07:30:02 PM UTC:
  tests:  2|4
 total_score: 15/70
 4612ef3
+Fri 05 May 2023 07:31:04 PM UTC: 
+ sudoku.c | 15 ++-------------
+ 1 file changed, 2 insertions(+), 13 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:49:19: error: variable ‘vcolumnas’ set but not used [-Werror=unused-but-set-variable]
+   49 |   int vfilas[10], vcolumnas[10]; //vmatriz[10];
+      |                   ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+657f510
