@@ -56,9 +56,10 @@ int is_valid(Node* n){
 
      for(int j = 0 ; j < 9 ; j++)
      {
-      if (vfilas[n->sudo[i][j]] == 1)
+      
+      if (vfilas[n->sudo[i][j]] == 1 && n->sudo[i][j] != 0)
       {
-
+          
          return 0;
       }
       vfilas[n->sudo[i][j]] = 1;
