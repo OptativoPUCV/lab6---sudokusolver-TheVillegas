@@ -79,7 +79,7 @@ int is_valid(Node* n){
 
   for(int k = 0 ; k < 9 ; k++) // recorre todos los elementos de la matriz
   {
-      for(p=0;p<9;p++){
+      for(int p=0;p<9;p++){
         int i=3*(k/3) + (p/3) ;
         int j=3*(k%3) + (p%3) ;
         if(vmatriz[n->sudo[i][j]] == 1)
