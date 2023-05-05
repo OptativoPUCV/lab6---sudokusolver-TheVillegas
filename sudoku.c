@@ -70,7 +70,7 @@ int is_valid(Node* n){
     }
     if(vcolumnas[n->sudo[j][i]] == 1)
     {
-     
+      
        return 0;
     }
     else{
@@ -86,10 +86,9 @@ int is_valid(Node* n){
         int j=3*(k%3) + (p%3) ;
         if(vmatriz[n->sudo[i][j]] == 1)
         {
-          if(n->sudo[i][j] == 0)
-          {
-            return 0;
-          }
+          
+          return 0;
+          
         }
         else
         {
