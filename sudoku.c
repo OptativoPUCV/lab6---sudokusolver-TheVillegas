@@ -97,6 +97,7 @@ int is_valid(Node* n){
         vmatriz[n->sudo[i][j]] = 1;
       }
     }
+    return 1;
   }
 
 
