@@ -75,3 +75,49 @@ sudoku.c:48:7: error: unused variable ‘fila’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 14bef82
+Fri 05 May 2023 06:43:31 PM UTC: 
+ sudoku.c | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:70:32: error: expected ‘)’ before ‘]’ token
+   70 |     if(vcolumnas[n->sudo[j][i]]] == 1)
+      |       ~                        ^
+      |                                )
+sudoku.c:70:32: error: expected statement before ‘]’ token
+sudoku.c:70:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   70 |     if(vcolumnas[n->sudo[j][i]]] == 1)
+      |     ^~
+sudoku.c:70:34: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   70 |     if(vcolumnas[n->sudo[j][i]]] == 1)
+      |                                  ^~
+sudoku.c:70:34: error: expected expression before ‘==’ token
+sudoku.c:70:38: error: expected statement before ‘)’ token
+   70 |     if(vcolumnas[n->sudo[j][i]]] == 1)
+      |                                      ^
+sudoku.c:75:5: error: ‘else’ without a previous ‘if’
+   75 |     else{
+      |     ^~~~
+sudoku.c:76:16: error: statement with no effect [-Werror=unused-value]
+   76 |       vcolumnas[n->sudo[i][j]]] = 1;
+      |       ~~~~~~~~~^~~~~~~~~~~~~~~
+sudoku.c:76:31: error: expected ‘;’ before ‘]’ token
+   76 |       vcolumnas[n->sudo[i][j]]] = 1;
+      |                               ^
+      |                               ;
+sudoku.c:76:31: error: expected statement before ‘]’ token
+sudoku.c:76:33: error: expected expression before ‘=’ token
+   76 |       vcolumnas[n->sudo[i][j]]] = 1;
+      |                                 ^
+sudoku.c:49:33: error: variable ‘vmatriz’ set but not used [-Werror=unused-but-set-variable]
+   49 |   int vfilas[10], vcolumnas[10],vmatriz[10];
+      |                                 ^~~~~~~
+sudoku.c:48:12: error: unused variable ‘columa’ [-Werror=unused-variable]
+   48 |   int fila,columa = 0;
+      |            ^~~~~~
+sudoku.c:48:7: error: unused variable ‘fila’ [-Werror=unused-variable]
+   48 |   int fila,columa = 0;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2437df5
