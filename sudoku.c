@@ -79,7 +79,7 @@ int is_valid(Node* n){
      }
     
   }
-
+  /*
   for(int k = 0 ; k < 9 ; k++) // recorre todos los elementos de la matriz
   {
     for(int p=0;p<9;p++){
@@ -99,7 +99,7 @@ int is_valid(Node* n){
     }
 
   }
-
+*/
  return 1;
 
 }
