@@ -53,7 +53,7 @@ int is_valid(Node* n){
   
   for(int i = 0 ; i < 9 ; i++)
   {
-     int vfilas[10];
+     int vfilas[10]={0};
      for(int j = 0 ; j < 9 ; j++)
      {
       
