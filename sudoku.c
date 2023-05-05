@@ -45,7 +45,18 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
 
-    return 1;
+  int *array = (int*)calloc(sizeof(int),10);
+  
+  int fila,columa = 0;
+  int vfilas[10], vcolumnas[10],vmatriz[10];
+
+  for(int i = 0 ; i < 9 ; i++)
+    {
+      vfilas[i] = 0;
+      vcolumnas[i]=0;
+      vmatriz[i]=0;
+    }
+  return 1;
 }
 
 
@@ -58,7 +69,6 @@ List* get_adj_nodes(Node* n){
         {
           Node *copyN = copy(n);
           copyN->sudo[0][2] = numero;
-          
           push(list, copyN);
           
         }
