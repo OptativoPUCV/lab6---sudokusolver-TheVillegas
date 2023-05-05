@@ -322,3 +322,28 @@ sudoku.c:49:33: error: variable ‘vmatriz’ set but not used [-Werror=unused-b
 cc1: all warnings being treated as errors
 Compilation failed
 37fb656
+Fri 05 May 2023 07:26:35 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:51:3: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘for’
+   51 |   for(int i = 0 ; i < 9 ; i++)
+      |   ^~~
+sudoku.c:51:19: error: ‘i’ undeclared (first use in this function)
+   51 |   for(int i = 0 ; i < 9 ; i++)
+      |                   ^
+sudoku.c:51:19: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:51:30: error: expected ‘;’ before ‘)’ token
+   51 |   for(int i = 0 ; i < 9 ; i++)
+      |                              ^
+      |                              ;
+sudoku.c:51:30: error: expected statement before ‘)’ token
+sudoku.c:54:7: error: ‘vcolumnas’ undeclared (first use in this function)
+   54 |       vcolumnas[i]=0;
+      |       ^~~~~~~~~
+sudoku.c:55:7: error: ‘vmatriz’ undeclared (first use in this function)
+   55 |       vmatriz[i]=0;
+      |       ^~~~~~~
+Compilation failed
+0b34751
