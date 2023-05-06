@@ -121,7 +121,7 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* n, int* cont){
-  if(n== NULL) return NULL;
+
   Stack * pila = createStack(n);
 
   while(!is_empty(pila)){
@@ -145,7 +145,7 @@ Node* DFS(Node* n, int* cont){
     free(current);
   }
 
-  return NULL;
+  return 0;
 }
 
 
