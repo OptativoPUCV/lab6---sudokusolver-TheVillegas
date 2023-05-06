@@ -69,8 +69,6 @@ int is_valid(Node* n){
       
      } 
   }
-
-  
   for(int k = 0 ; k < 9 ; k++) // recorre todos los elementos de la matriz
   {
    
@@ -107,7 +105,9 @@ List* get_adj_nodes(Node* n){
         {
           Node *copyN = copy(n);
           copyN->sudo[0][2] = numero;
-          push(list, copyN);
+
+          if(is_valid(copyN)==1) push(list, copyN);
+          
           
         }
       
