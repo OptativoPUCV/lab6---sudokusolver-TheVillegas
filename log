@@ -640,3 +640,16 @@ Sat 06 May 2023 09:02:57 PM UTC:
  tests:  0|5
 total_score: 0/70
 ba987db
+Sat 06 May 2023 09:03:14 PM UTC: 
+ sudoku.c | 43 ++++++++++++++++++++++---------------------
+ 1 file changed, 22 insertions(+), 21 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:71:21: error: called object is not a function or function pointer
+   71 |               int i=3(f/3) + (c/3) ;
+      |                     ^
+sudoku.c:72:21: error: called object is not a function or function pointer
+   72 |               int j=3(f%3) + (c%3) ;
+      |                     ^
+Compilation failed
+9c1d718
