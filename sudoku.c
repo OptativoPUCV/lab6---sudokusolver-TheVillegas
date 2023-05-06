@@ -43,20 +43,13 @@ void print_node(Node* n){
     printf("\n");
 }
 
-int is_valid(Node* n){
-  
-  
-   //vcolumnas[10]; //vmatriz[10];
-
-
-  
-  
+int is_valid(Node* n){  
   for(int i = 0 ; i < 9 ; i++)
   {
      int vfilas[10]={0};
+     int vcolumnas[10] ={0} ;
      for(int j = 0 ; j < 9 ; j++)
      {
-      
       if (vfilas[n->sudo[i][j]] == 1 && n->sudo[i][j] != 0)
       {
           
@@ -65,10 +58,17 @@ int is_valid(Node* n){
       else{
       vfilas[n->sudo[i][j]] = 1;
       }
+      if(vcolumnas[n->sudo[j][i]] == 1 && n->sudo[j][i]!=0)
+      {
+        return 0;
+      }
+      else{
+        vcolumnas[n->sudo[j][i]=1];
+      }
      } 
   }
-  return 1;
-  /*
+
+  
   for(int k = 0 ; k < 9 ; k++) // recorre todos los elementos de la matriz
   {
     for(int p=0;p<9;p++){
@@ -88,7 +88,7 @@ int is_valid(Node* n){
     }
 
   }
-*/
+
  return 1;
 
 }
