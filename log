@@ -485,3 +485,9 @@ sudoku.c:77:10: error: ‘vmatriz’ undeclared (first use in this function)
 sudoku.c:77:10: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 1ebfa83
+Sat 06 May 2023 08:23:31 PM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  2|4
+total_score: 15/70
+17db7bd
