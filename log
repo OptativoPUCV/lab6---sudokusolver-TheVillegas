@@ -786,3 +786,18 @@ Sat 06 May 2023 10:48:09 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 4613a5f
+Sat 06 May 2023 10:49:12 PM UTC: 
+ sudoku.c | 34 ++++++++++++++++------------------
+ 1 file changed, 16 insertions(+), 18 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:124:5: error: variable ‘s’ has initializer but incomplete type
+  124 |     Stack s=createStack();
+      |     ^~~~~
+sudoku.c:124:11: error: storage size of ‘s’ isn’t known
+  124 |     Stack s=createStack();
+      |           ^
+sudoku.c:124:11: error: unused variable ‘s’ [-Werror=unused-variable]
+cc1: all warnings being treated as errors
+Compilation failed
+460333d
