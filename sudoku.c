@@ -146,7 +146,7 @@ Node* DFS(Node* n, int* cont){
     return current;
   }
   
-  return current;
+  return NULL;
 }
 
 
