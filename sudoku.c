@@ -129,7 +129,7 @@ Node* DFS(Node* n, int* cont){
     Node *current = top(pila);
     pop(pila);
     
-    if(is_final(current)==1)
+    if(is_final(current))
     {
       return current;
     }
@@ -145,7 +145,7 @@ Node* DFS(Node* n, int* cont){
     free(current);
   }
 
-  return 0;
+  return NULL;
 }
 
 
