@@ -140,8 +140,8 @@ Node* DFS(Node* n, int* cont){
     push(pila,listanodos);
     aux = next(listanodos);
   }
-  cont++;
-  free(current);
+  (*cont)++;
+  
       
   }
 return NULL;
