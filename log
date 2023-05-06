@@ -551,3 +551,14 @@ sudoku.c:112:11: error: ‘copyN’ undeclared (first use in this function); did
 sudoku.c:112:11: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 0d5f269
+Sat 06 May 2023 08:42:56 PM UTC: 
+ sudoku.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:108:15: error: unused variable ‘copyN’ [-Werror=unused-variable]
+  108 |         Node *copyN = copy(n);
+      |               ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+125fa19
