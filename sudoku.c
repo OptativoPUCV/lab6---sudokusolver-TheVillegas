@@ -123,14 +123,13 @@ int is_final(Node* n){
 Node* DFS(Node* n, int* cont){
   
   Stack * pila = createStack();
-  
   push(pila,n);
   while(is_empty(pila) == 0){
     
     Node *current = top(pila);
     pop(pila);
     
-    if(is_final(current))
+    if(is_final(current)==1)
     {
       return current;
     }
