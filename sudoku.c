@@ -142,11 +142,9 @@ Node* DFS(Node* n, int* cont){
   }
   (*cont)++;
   free(current);
-  
-      
-}
-return NULL;
-  
+  }
+
+  return NULL;
 }
 
 
