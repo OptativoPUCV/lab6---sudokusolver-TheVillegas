@@ -110,7 +110,7 @@ List* get_adj_nodes(Node* n){
           n->sudo[i][j]=k;
           Node *copyN = copy(n);
           
-          if(is_valid(copyN)==1)pushBack(list, copyN);
+          if(is_valid(copyN)==1)push(list, copyN);
         }
       }
     }
