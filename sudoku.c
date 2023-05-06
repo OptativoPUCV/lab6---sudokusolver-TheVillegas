@@ -141,6 +141,7 @@ Node* DFS(Node* n, int* cont){
     aux = next(listanodos);
   }
   (*cont)++;
+  free(current);
   
       
 }
