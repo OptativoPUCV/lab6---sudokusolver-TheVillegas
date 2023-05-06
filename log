@@ -474,3 +474,14 @@ sudoku.c:77:10: note: each undeclared identifier is reported only once for each 
 cc1: all warnings being treated as errors
 Compilation failed
 211ce3c
+Sat 06 May 2023 08:23:05 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:77:10: error: ‘vmatriz’ undeclared (first use in this function)
+   77 |       if(vmatriz[n->sudo[i][j]] == 1)
+      |          ^~~~~~~
+sudoku.c:77:10: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+1ebfa83
