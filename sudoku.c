@@ -133,7 +133,7 @@ Node* DFS(Node* n, int* cont){
     return current;
   }
     
-  List *listanodos = createList(current);
+  List *listanodos = get_adj_nodes(current);
   Node *aux = first(listanodos);
 
   while(aux != NULL){
@@ -143,7 +143,7 @@ Node* DFS(Node* n, int* cont){
   (*cont)++;
   
       
-  }
+}
 return NULL;
   
 }
