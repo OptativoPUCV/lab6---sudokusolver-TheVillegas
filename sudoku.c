@@ -115,7 +115,7 @@ List* get_adj_nodes(Node* n){
             pushBack(list,copyN);
           }
           else{
-            freeNode(copyN);
+            free(copyN);
           }
         }
       }
