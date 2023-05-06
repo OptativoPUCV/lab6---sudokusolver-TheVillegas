@@ -107,19 +107,20 @@ List* get_adj_nodes(Node* n){
       {
         for(int k = 1 ; k <= 9 ; k++)
         {
-          n->sudo[i][j]=k;
           Node *copyN = copy(n);
+          copyN->sudo[i][j] = k;
           
-          if(is_valid(copyN)==1)push(list, copyN);
+          
+          if(is_valid(copyN)==1)
+          {
+            pushBack(list,copyN);
+          }
         }
       }
     }
       
   }
-    
 
-      
-      
   return list;
 }
 
