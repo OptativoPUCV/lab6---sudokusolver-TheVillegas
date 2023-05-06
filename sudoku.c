@@ -133,7 +133,7 @@ Node* DFS(Node* n, int* cont){
     return current;
   }
     
-  List *listanodos = createList(pila);
+  List *listanodos = createList(current);
   Node *aux = first(listanodos);
 
   while(aux != NULL){
