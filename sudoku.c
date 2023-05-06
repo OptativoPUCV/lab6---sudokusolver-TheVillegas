@@ -68,8 +68,8 @@ int is_valid(Node* n){
                     arrayCol[n->sudo[c][f]]=1;
                 }
             }
-              int i=3(f/3) + (c/3) ;
-              int j=3(f%3) + (c%3) ;
+              int i=3*(f/3) + (c/3) ;
+              int j=3*(f%3) + (c%3) ;
              if(n->sudo[i][j]!=0){
                  if(arraySub[n->sudo[i][j]]==1){
                      return 0;
